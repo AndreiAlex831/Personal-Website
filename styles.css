@@ -1,6 +1,10 @@
-@media {
-
+:root {
+  --background-color1: #A04747;
+  --background-color2: #D8A25E;
+  --background-color3: #343131;
+  --text-color: #EEDF7A;
 }
+
 
 *, ::before, ::after {
   padding: 0;
@@ -17,41 +21,69 @@ body {
   font-family: "Baskervville", serif;
 }
 
-img:hover {
-  transform: scale(1.1);
-  transition: transform .2s;
-}
-
-main {
-  display: grid;
-  grid-template-columns: minmax(2rem, 1fr)
-                         minmax(min-content, 94rem)
-                         minmax(2rem, 1fr);
-}
 
 #navbar {
-  background-color: lightcoral;
+  background-color: var(--background-color1);
   position: fixed;
   top: 0;
   width: 100vw;
 
 }
 
+#navbar ul a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 li {
+  list-style: none;
   margin-right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 ul {
+  color: var(--text-color);
   width: 90vw;
   height: 6vh;
-  background-color: aqua;
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
-li {
-  font-size: 2rem;
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color3);
+  height: 106vh;
+  width: 100vw;
 }
+
+.welcome h1{
+  font-size: 7rem;
+  color: var(--text-color);
+}
+
+.welcome p {
+  font-style: italic;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--background-color1)
+}
+
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 
