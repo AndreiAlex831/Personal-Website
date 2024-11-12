@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 62.5%;
 }
@@ -16,12 +17,41 @@ body {
   font-family: "Baskervville", serif;
 }
 
+img:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+
 main {
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+  grid-template-columns: minmax(2rem, 1fr)
+                         minmax(min-content, 94rem)
+                         minmax(2rem, 1fr);
 }
 
 #navbar {
+  background-color: lightcoral;
   position: fixed;
   top: 0;
+  width: 100vw;
+
 }
+
+li {
+  margin-right: 1rem;
+}
+
+ul {
+  width: 90vw;
+  height: 6vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
