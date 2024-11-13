@@ -17,10 +17,12 @@
 
 
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 
 body {
+  height: 100%;
   font-family: "Baskervville", serif;
 }
 
@@ -29,7 +31,8 @@ body {
   background-color: var(--background-color1);
   position: fixed;
   top: 0;
-  width: 99vw;
+  width: 100%;
+  height: 6%;
   box-shadow: 0 1px 10px black;
 }
 
@@ -47,7 +50,7 @@ li {
 
 ul {
   color: var(--text-color);
-  width: 99vw;
+  width: 99%;
   height: 6vh;
   display: flex;
   justify-content: end;
@@ -61,8 +64,8 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: var(--background-color3);
-  height: 100vh;
-  width: 99vw;
+  height: 100%;
+  width: 100%;
 }
 
 .welcome h1{
@@ -81,7 +84,7 @@ ul {
 }
 
 #projects {
-  height: 95vh;
+  height: 100%;
   background-color: var(--background-color5);
 }
 
@@ -93,14 +96,14 @@ ul {
   font-size: 4rem;
   margin: 0 auto;
   color: var(--text-color2);
-  border-bottom: 0.3rem solid var(--text-color2);
-  text-shadow: 0 2px 5px black;
+  border-bottom: 0.1rem groove var(--text-color2);
+  text-shadow: 0 1px 3px black;
 }
 
 .projects-grid {
   margin: 5rem auto;
-  width: 60vw;
-  height: 75vh;
+  width: 60%;
+  height: 75%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -113,7 +116,7 @@ ul {
   padding-top: 10px;
   color: var(--text-color2);
   font-size: 2.1rem;
-  text-shadow: 0 2px 5px black;
+  text-shadow: 0 2px 3px black;
 }
 
 .box {
@@ -122,7 +125,7 @@ ul {
   background-color: var(--background-color3);
   width: 420px;
   height: 280px;
-  box-shadow: 0 5px 10px black;
+  box-shadow: 0 3px 5px black;
 }
 
 .box:hover {
@@ -130,12 +133,58 @@ ul {
   transition: transform .4s;
 }
 
+
 #contact {
-  background-color: lightcoral;
-  height: 95vh;
-  width: 99vw;
+  background-color: var(--background-color3);
+  width: 40%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  gap: 20px;
 }
 
+.contact-text  {
+  font-size: 5rem;
+  color: var(--text-color);
+  text-shadow: 0 1px 3px black;
+  padding-bottom: 50px;
+}
+
+.contact-box {
+  background-color: var(--background-color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+footer {
+  background-color: var(--background-color3);
+  height: 10%;
+}
+
+hr {
+  background-color: #A04747;
+  border-color: #A04747;
+  height: 5px;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-shadow: 0 1px 3px black;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   * {
