@@ -30,6 +30,7 @@ body {
   position: fixed;
   top: 0;
   width: 99vw;
+  box-shadow: 0 1px 10px black;
 }
 
 a{
@@ -52,6 +53,7 @@ ul {
   justify-content: end;
   align-items: center;
   gap: 3rem;
+  text-shadow: 0 1px 3px black;
 }
 
 #welcome-section {
@@ -66,13 +68,16 @@ ul {
 .welcome h1{
   font-size: 7rem;
   color: var(--text-color);
+  text-shadow: 0 2px 5px black;
+
 }
 
 .welcome p {
   font-style: italic;
   text-align: center;
   font-size: 4rem;
-  color: var(--background-color1)
+  color: var(--background-color1);
+  text-shadow: 0 2px 5px black;
 }
 
 #projects {
@@ -89,6 +94,7 @@ ul {
   margin: 0 auto;
   color: var(--text-color2);
   border-bottom: 0.3rem solid var(--text-color2);
+  text-shadow: 0 2px 5px black;
 }
 
 .projects-grid {
@@ -107,6 +113,7 @@ ul {
   padding-top: 10px;
   color: var(--text-color2);
   font-size: 2.1rem;
+  text-shadow: 0 2px 5px black;
 }
 
 .box {
@@ -115,11 +122,18 @@ ul {
   background-color: var(--background-color3);
   width: 420px;
   height: 280px;
+  box-shadow: 0 5px 10px black;
 }
 
 .box:hover {
   transform: scale(1.1);
   transition: transform .4s;
+}
+
+#contact {
+  background-color: lightcoral;
+  height: 95vh;
+  width: 99vw;
 }
 
 
